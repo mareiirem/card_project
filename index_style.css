@@ -1,40 +1,40 @@
+
 html, body {
     height: 100%;
 }
 
-body{
+body {
     margin: 0;
-    background-image: linear-gradient(to top, rgb(21, 17, 17), rgb(46, 46, 45));
-    font: 8pt Arial;  
+    background: linear-gradient(to top, rgb(21, 17, 17), rgb(77, 77, 75));
+    font: 8pt Arial;
     background-repeat: no-repeat;
     background-size: cover;
+
     display: flex;
     flex-direction: column;
-
+    min-height: 100vh;
 }
 
-
-h1{
+h1 {
     font-size: 90px;
 }
 
+/* MAIN CONTENT GROWS */
 #page-wrapper {
+    flex: 1;
     display: flex;
     justify-content: center;
     text-align: center;
     width: 100%;
-    margin: 30px 0 0 0px;
-    flex: 1; /* pushes footer down */
+    margin-top: 30px;
 }
 
+/* BUTTONS */
 #button-decks {
   background-color: red;
   border: none;
   color: white;
   padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   cursor: pointer;
 }
@@ -42,11 +42,8 @@ h1{
 #button-lobby {
   background-color: yellow;
   border: none;
-  color: white;
+  color: black;
   padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   cursor: pointer;
 }
@@ -56,9 +53,6 @@ h1{
   border: none;
   color: white;
   padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   cursor: pointer;
 }
@@ -68,17 +62,16 @@ h1{
   border: none;
   color: white;
   padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   cursor: pointer;
 }
 
+/* FOOTER STICKS TO BOTTOM */
 #footer {
   background: linear-gradient(to right, red, yellow, green, blue);
   color: white;
   text-align: center;
   padding: 10px;
   font-size: 8pt;
+  width: 100%;
 }
