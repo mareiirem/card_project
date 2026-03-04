@@ -133,3 +133,54 @@ nav a:hover {
     from { opacity: 0; transform: translateY(15px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+/* BACKGROUND CARD CONTAINER */
+.card-background {
+    position: fixed;
+    top: 0;
+    left: -200px; /* start slightly off screen */
+    width: 150%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+/* INDIVIDUAL CARDS */
+.card {
+    position: absolute;
+    width: 90px;
+    height: 130px;
+    border-radius: 12px;
+    opacity: 0.15;
+    animation: floatRight linear infinite;
+    left: -150px;
+}
+
+/* Placeholder colors */
+.card1  { background: red;    top: 5%;  animation-duration: 18s; animation-delay: 0s; }
+.card2  { background: yellow; top: 15%; animation-duration: 25s; animation-delay: -4s; }
+.card3  { background: green;  top: 25%; animation-duration: 22s; animation-delay: -8s; }
+.card4  { background: blue;   top: 35%; animation-duration: 30s; animation-delay: -12s; }
+.card5  { background: white;  top: 45%; animation-duration: 19s; animation-delay: -16s; }
+.card6  { background: yellow; top: 55%; animation-duration: 20s; animation-delay: -6s; }
+.card7  { background: green;  top: 65%; animation-duration: 24s; animation-delay: -10s; }
+.card8  { background: white;  top: 75%; animation-duration: 23s; animation-delay: -14s; }
+.card9  { background: red;    top: 85%; animation-duration: 33s; animation-delay: -18s; }
+.card10 { background: blue;   top: 92%; animation-duration: 28s; animation-delay: -22s; }
+
+@keyframes floatRight {
+    from {
+        transform: translateX(0) rotate(0deg);
+    }
+    to {
+        transform: translateX(130vw) rotate(360deg);
+    }
+}
+
+.navbar,
+.home-container,
+.footer {
+    position: relative;
+    z-index: 2;
+}
