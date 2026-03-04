@@ -155,19 +155,22 @@ nav a:hover {
     opacity: 0.15;
     animation: floatRight linear infinite;
     left: -150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* Placeholder colors */
-.card1  { background: red;    top: 5%;  animation-duration: 18s; animation-delay: 0s; }
-.card2  { background: yellow; top: 15%; animation-duration: 25s; animation-delay: -4s; }
-.card3  { background: green;  top: 25%; animation-duration: 22s; animation-delay: -8s; }
-.card4  { background: blue;   top: 35%; animation-duration: 30s; animation-delay: -12s; }
-.card5  { background: white;  top: 45%; animation-duration: 19s; animation-delay: -16s; }
-.card6  { background: yellow; top: 55%; animation-duration: 20s; animation-delay: -6s; }
-.card7  { background: green;  top: 65%; animation-duration: 24s; animation-delay: -10s; }
-.card8  { background: white;  top: 75%; animation-duration: 23s; animation-delay: -14s; }
-.card9  { background: red;    top: 85%; animation-duration: 33s; animation-delay: -18s; }
-.card10 { background: blue;   top: 92%; animation-duration: 28s; animation-delay: -22s; }
+.card1  { background-image: url("Assets/Draw 4.png"); top: 5%;  animation-duration: 18s; animation-delay: 0s; }
+.card2  { background-image: url("Assets/Blue- 12.png"); top: 15%; animation-duration: 25s; animation-delay: -4s; }
+.card3  { background-image: url("Assets/Green Reverse- 1.png"); top: 25%; animation-duration: 22s; animation-delay: -8s; }
+.card4  { background-image: url("Assets/Yellow- 4.png"); top: 35%; animation-duration: 24s; animation-delay: -12s; }
+.card5  { background-image: url("Assets/Wild-3.png"); top: 45%; animation-duration: 20s; animation-delay: -16s; }
+.card6  { background-image: url("Assets/Yellow- 3.png"); top: 55%; animation-duration: 26s; animation-delay: -6s; }
+.card7  { background-image: url("Assets/Green- 8.png"); top: 65%; animation-duration: 24s; animation-delay: -10s; }
+.card8  { background-image: url("Assets/Red- 6.png"); top: 75%; animation-duration: 23s; animation-delay: -14s; }
+.card9  { background-image: url("Assets/Blue- 9.png"); top: 85%; animation-duration: 30s; animation-delay: -18s; }
+.card10 { background-image: url("Assets/Yellow Reverse.png"); top: 92%; animation-duration: 28s; animation-delay: -22s; }
 
 @keyframes floatRight {
     from {
