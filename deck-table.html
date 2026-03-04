@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UNO Deck Table</title>
+    <link rel="stylesheet" href="deck-table.css">
+</head>
+<body>
+
+<header class="navbar">
+    <h1 class="logo">UNO Gaming Hub</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="game-lobby.html">Lobby</a>
+        <a href="rules.html">Rules</a>
+    </nav>
+</header>
+
+<main class="table-container">
+
+    <!-- DRAW PILE -->
+    <section class="deck-area">
+        <h2>Draw Pile</h2>
+        <div class="deck-stack"></div>
+    </section>
+
+    <!-- DISCARD PILE -->
+    <section class="deck-area">
+        <h2>Discard Pile</h2>
+        <div class="card flippable">
+            <div class="card-inner">
+                <div class="card-front red">5</div>
+                <div class="card-back"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SAMPLE HAND -->
+    <section class="player-hand">
+        <h2>Your Hand</h2>
+
+        <div class="hand">
+            <div class="card red">7</div>
+            <div class="card blue">2</div>
+            <div class="card green">8</div>
+            <div class="card yellow">4</div>
+            <div class="card wild">W</div>
+        </div>
+    </section>
+
+</main>
+
+</body>
+</html>
