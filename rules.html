@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UNO — Rules and Tips</title>
+  <link rel="stylesheet" href="rules.css" />
+</head>
+
+<body>
+
+  <header class="navbar">
+    <h1 class="logo">UNO Gaming Hub</h1>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="game-lobby.html">Game Lobby</a>
+      <a href="deck-table.html">Deck Table</a>
+    </nav>
+  </header>
+
+  <main class="page fade-in">
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Rules and Tips</h2>
+        <p>
+          Learn the basic rules of UNO, review every card type, and pick up a few
+          strategy tips before you join a lobby.
+        </p>
+
+        <div class="hero-actions">
+          <a class="cta" href="#basic-rules">Basic Rules</a>
+          <a class="cta secondary" href="#card-gallery">Card Explanations</a>
+          <a class="cta secondary" href="#strategy">Strategy Tips</a>
+        </div>
+      </div>
+
+      <div class="hero-badge" aria-hidden="true">
+        <div class="badge-ring"></div>
+        <div class="badge-card">UNO</div>
+      </div>
+    </section>
+
+    <section id="basic-rules" class="panel">
+      <h3>Basic Rules (Quick Guide)</h3>
+
+      <div class="rules-grid">
+        <article class="rule">
+          <h4>Goal</h4>
+          <p>Be the first player to get rid of all your cards.</p>
+        </article>
+
+        <article class="rule">
+          <h4>Setup</h4>
+          <p>Each player starts with 7 cards. Flip one card to start the discard pile.</p>
+        </article>
+
+        <article class="rule">
+          <h4>On Your Turn</h4>
+          <p>
+            Play a card that matches the discard pile by <strong>color</strong> or
+            <strong>number/symbol</strong>. If you cannot play, draw a card.
+          </p>
+        </article>
+
+        <article class="rule">
+          <h4>Action Cards</h4>
+          <p>Special cards change the flow: Skip, Reverse, Draw Two, Wild, Wild Draw Four.</p>
+        </article>
+
+        <article class="rule">
+          <h4>Saying “UNO”</h4>
+          <p>
+            When you have <strong>one card left</strong>, you must say “UNO”.
+            (In a real game, failing to do so can cause a penalty.)
+          </p>
+        </article>
+
+        <article class="rule">
+          <h4>Winning</h4>
+          <p>The first player to play their last card wins the round.</p>
+        </article>
+      </div>
+
+      <div class="note" role="note" aria-label="Accessibility note">
+        <strong>Accessibility note:</strong> This page uses high-contrast colors and slower hover animations.
+      </div>
+    </section>
+
+    <section id="card-gallery" class="panel">
+      <div class="panel-header">
+        <h3>Card Explanations (Flip Cards)</h3>
+        <p class="subtext">
+          Hover (or focus with Tab) to flip each card and read what it does.
+        </p>
+      </div>
+
+      <div class="card-grid">
+
+        <div class="flip-card" tabindex="0" aria-label="Number card explanation">
+          <div class="flip-inner">
+            <div class="flip-front uno-front red">
+              <span class="front-title">Number</span>
+              <span class="front-big">7</span>
+              <span class="front-sub">Match color or number</span>
+            </div>
+            <div class="flip-back">
+              <h4>Number Cards</h4>
+              <p>
+                Play a number card if it matches the <strong>color</strong> or the
+                <strong>number</strong> on the discard pile.
+              </p>
+              <ul>
+                <li>Most common way to reduce your hand</li>
+                <li>Great for controlling colors</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card" tabindex="0" aria-label="Skip card explanation">
+          <div class="flip-inner">
+            <div class="flip-front uno-front yellow">
+              <span class="front-title">Skip</span>
+              <span class="front-big">⦸</span>
+              <span class="front-sub">Next player loses a turn</span>
+            </div>
+            <div class="flip-back">
+              <h4>Skip</h4>
+              <p>
+                When played, the <strong>next player is skipped</strong> and does not take a turn.
+              </p>
+              <ul>
+                <li>Use to stop someone close to winning</li>
+                <li>Use to keep the turn order favorable</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card" tabindex="0" aria-label="Reverse card explanation">
+          <div class="flip-inner">
+            <div class="flip-front uno-front blue">
+              <span class="front-title">Reverse</span>
+              <span class="front-big">⇄</span>
+              <span class="front-sub">Switch direction</span>
+            </div>
+            <div class="flip-back">
+              <h4>Reverse</h4>
+              <p>
+                Changes the direction of play. In 2-player games, this can act like a skip.
+              </p>
+              <ul>
+                <li>Great for timing when a strong opponent is next</li>
+                <li>Combine with color control to keep momentum</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card" tabindex="0" aria-label="Draw Two card explanation">
+          <div class="flip-inner">
+            <div class="flip-front uno-front green">
+              <span class="front-title">Draw 2</span>
+              <span class="front-big">+2</span>
+              <span class="front-sub">Next player draws 2</span>
+            </div>
+            <div class="flip-back">
+              <h4>Draw Two</h4>
+              <p>
+                The next player must draw <strong>two cards</strong> and loses their turn.
+              </p>
+              <ul>
+                <li>Use to slow down a player with a small hand</li>
+                <li>Good for forcing opponents to pick up cards</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card" tabindex="0" aria-label="Wild card explanation">
+          <div class="flip-inner">
+            <div class="flip-front uno-front wild">
+              <span class="front-title">Wild</span>
+              <span class="front-big">W</span>
+              <span class="front-sub">Choose any color</span>
+            </div>
+            <div class="flip-back">
+              <h4>Wild</h4>
+              <p>
+                Lets you <strong>choose the next color</strong> to be played, regardless of the discard pile.
+              </p>
+              <ul>
+                <li>Best saved for when you are stuck</li>
+                <li>Choose a color you have the most of</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card" tabindex="0" aria-label="Wild Draw Four card explanation">
+          <div class="flip-inner">
+            <div class="flip-front uno-front wild">
+              <span class="front-title">Wild +4</span>
+              <span class="front-big">+4</span>
+              <span class="front-sub">Choose color + opponent draws 4</span>
+            </div>
+            <div class="flip-back">
+              <h4>Wild Draw Four</h4>
+              <p>
+                Choose the next color AND the next player draws <strong>four cards</strong> and loses their turn.
+              </p>
+              <ul>
+                <li>Strongest swing card — use at key moments</li>
+                <li>Use to block an opponent from winning</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="kbd-hint" aria-label="Keyboard hint">
+        Tip: Use <strong>Tab</strong> to focus a card and flip it without a mouse.
+      </div>
+    </section>
+
+    <section id="strategy" class="panel">
+      <h3>Strategy Tips</h3>
+
+      <div class="strategy-grid">
+        <article class="tip">
+          <h4>Control the Color</h4>
+          <p>Try to keep a majority color in your hand so you can steer the game.</p>
+        </article>
+
+        <article class="tip">
+          <h4>Save Wilds for Trouble</h4>
+          <p>Wild cards are best when you have no other playable option.</p>
+        </article>
+
+        <article class="tip">
+          <h4>Watch Opponents’ Hands</h4>
+          <p>If someone is low on cards, use Skip/Draw cards to slow them down.</p>
+        </article>
+
+        <article class="tip">
+          <h4>Reverse for Positioning</h4>
+          <p>Reverse can change who gets the next turn — use it to dodge strong players.</p>
+        </article>
+
+        <article class="tip">
+          <h4>Don’t Be Predictable</h4>
+          <p>Mix up colors and action cards so opponents can’t anticipate your moves.</p>
+        </article>
+
+        <article class="tip">
+          <h4>Plan Your “UNO” Turn</h4>
+          <p>Try to reach one card with a strong last-play option ready.</p>
+        </article>
+      </div>
+
+      <div class="footer-links">
+        <a class="cta secondary" href="game-lobby.html">Back to Game Lobby</a>
+        <a class="cta" href="deck-table.html">Go to Deck Table</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
