@@ -1,77 +1,135 @@
-
-html, body {
-    height: 100%;
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    background: linear-gradient(to top, rgb(21, 17, 17), rgb(77, 77, 75));
-    font: 8pt Arial;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to top, #151111, #4d4d4b);
+    color: white;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
 
-h1 {
-    font-size: 90px;
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #111;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
 
-/* MAIN CONTENT GROWS */
-#page-wrapper {
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: red;
+}
+
+/* MAIN HOME */
+.home-container {
     flex: 1;
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* HERO CARD */
+.hero-card {
+    background: rgba(30, 30, 30, 0.95);
+    padding: 50px;
+    border-radius: 16px;
     text-align: center;
-    width: 100%;
-    margin-top: 30px;
+    max-width: 750px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+.uno-title {
+    font-size: 80px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.hero-card h2 {
+    font-weight: normal;
+    margin-bottom: 25px;
+    color: #ddd;
+}
+
+.hero-card p {
+    line-height: 1.6;
+    margin-bottom: 35px;
+    color: #ccc;
 }
 
 /* BUTTONS */
-#button-decks {
-  background-color: red;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  font-size: 16px;
-  cursor: pointer;
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
-#button-lobby {
-  background-color: yellow;
-  border: none;
-  color: black;
-  padding: 15px 32px;
-  font-size: 16px;
-  cursor: pointer;
+.btn {
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
 }
 
-#button-rules {
-  background-color: green;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  font-size: 16px;
-  cursor: pointer;
+.btn.red {
+    background: red;
+    color: white;
 }
 
-#button-credit {
-  background-color: blue;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  font-size: 16px;
-  cursor: pointer;
+.btn.yellow {
+    background: gold;
+    color: black;
 }
 
-/* FOOTER STICKS TO BOTTOM */
-#footer {
-  background: linear-gradient(to right, red, yellow, green, blue);
-  color: white;
-  text-align: center;
-  padding: 10px;
-  font-size: 8pt;
-  width: 100%;
+.btn.green {
+    background: green;
+    color: white;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+    background: linear-gradient(to right, red, yellow, green, blue);
+    color: white;
+}
+
+/* FADE IN */
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
 }

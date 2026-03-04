@@ -3,38 +3,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>UNO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNO Gaming Hub</title>
     <link rel="stylesheet" href="index_style.css">
 </head>
 
 <body>
 
-<div id="page-wrapper">
-    <div id="main">
+<header class="navbar">
+    <h1 class="logo">UNO Gaming Hub</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="card-decks.html">Decks</a>
+        <a href="rules-and-strategy.html">Rules</a>
+        <a href="credits_and_presentation.html">Credits</a>
+    </nav>
+</header>
 
-        <div id="welcome">
-            <h1>Uno!</h1>
-            <h2>Fast, Fun, and Unpredictable</h2>
-            <p>
-                Jump into the classic card game everyone loves, now online with friends and players around the world.
-                Match colors, play wild cards, and shout “UNO!” before your opponents beat you to it.
-                With quick rounds, simple rules, and nonstop twists, UNO Online is perfect for casual fun or competitive play anytime, anywhere.
-            </p>
+<main class="home-container fade-in">
+
+    <section class="hero-card">
+        <h1 class="uno-title">UNO</h1>
+        <h2>Fast, Fun, and Unpredictable!</h2>
+
+        <p>
+            Jump into the classic card game everyone loves, now online with friends and players around the world.
+            Match colors, play wild cards, and shout “UNO!” before your opponents beat you to it.
+            With quick rounds, simple rules, and nonstop twists, UNO Online is perfect for casual fun or competitive play anytime, anywhere.
+        </p>
+
+        <div class="button-group">
+            <a href="card-decks.html" class="btn red">View Decks</a>
+            <a href="game-lobby.html" class="btn yellow">Enter Lobby</a>
+            <a href="rules-and-strategy.html" class="btn green">Rules & Strategy</a>
         </div>
+    </section>
 
-        <div id="game_options">
-            <a href="card-decks.html"><button id="button-decks">View Decks</button></a>
-            <a href="game-lobby.html"><button id="button-lobby">Enter Lobby</button></a>
-            <a href="rules-and-strategy.html"><button id="button-rules">Rules and Strategy</button></a>
-            <a href="credits_and_presentation.html"><button id="button-credit">Credits</button></a>
-        </div>
+</main>
 
-    </div>
-</div>
-
-<!-- FOOTER MUST BE OUTSIDE page-wrapper -->
-<footer id="footer">
-    <p>UNO® and all related trademarks are the property of Mattel. All rights reserved © Mattel.</p>
+<footer class="footer">
+    UNO® and all related trademarks are the property of Mattel. All rights reserved © Mattel.
 </footer>
 
 </body>
