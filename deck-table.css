@@ -96,10 +96,6 @@ body {
     overflow: hidden;
 }
 
-/* Hand card hover lift */
-.hand .card:hover {
-    transform: translateY(-10px);
-}
 
 /* WHITE OVAL ON HAND CARDS ONLY */
 .card::before {
@@ -239,21 +235,6 @@ body {
 .yellow { background: #fbc02d; color: black; }
 .black  { background: black; }
 
-/* PLAYER HAND FANNED LAYOUT */
-.hand {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    height: 160px;
-}
-
-.hand .card {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform-origin: bottom center;
-    transition: transform 0.2s ease;
-}
 
 
 
@@ -263,14 +244,14 @@ body {
     justify-content: center;
     align-items: flex-start;
     gap: 30px;
-    grid-column: span 2; /* spans the full width of table-container */
+    grid-column: span 2; 
     position: relative;
 }
 
 /* TURN INDICATOR */
 .turn-indicator {
     position: absolute; 
-    left: -60px;  /* moves it to the left */
+    left: -60px;  
     top: 30px;   
     background: #1f2937;
     border-radius: 16px;
@@ -331,9 +312,41 @@ body {
     }
 }
 
-/* Fan rotation for 5 cards example */
-.hand .card:nth-child(1) { transform: translateX(-140px) rotate(-20deg); z-index:1; }
-.hand .card:nth-child(2) { transform: translateX(-70px) rotate(-10deg); z-index:2; }
-.hand .card:nth-child(3) { transform: translateX(0px) rotate(0deg); z-index:3; }
-.hand .card:nth-child(4) { transform: translateX(70px) rotate(10deg); z-index:4; }
-.hand .card:nth-child(5) { transform: translateX(140px) rotate(20deg); z-index:5; }
+/* PLAYER HAND FANNED LAYOUT WITH HOVER LIFT + GLOW */
+.hand {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 160px;
+    transform: translateX(-50px); /* shift all cards slightly left */
+}
+
+/* Base card styles inside hand */
+.hand .card {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform-origin: bottom center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Define per-card fanned positions using CSS variables */
+.hand .card:nth-child(1) { --card-x: -140px; --card-rot: -20deg; z-index:1; }
+.hand .card:nth-child(2) { --card-x: -70px; --card-rot: -10deg; z-index:2; }
+.hand .card:nth-child(3) { --card-x: 0px; --card-rot: 0deg; z-index:3; }
+.hand .card:nth-child(4) { --card-x: 70px; --card-rot: 10deg; z-index:4; }
+.hand .card:nth-child(5) { --card-x: 140px; --card-rot: 20deg; z-index:5; }
+
+/* Apply the fanned transform using variables */
+.hand .card {
+    transform: translateX(var(--card-x, 0)) rotate(var(--card-rot, 0deg));
+}
+
+/* Hover effect: lift + glow without breaking fan */
+.hand .card:hover {
+    transform: translateX(var(--card-x, 0)) translateY(-15px) rotate(var(--card-rot, 0deg));
+    box-shadow: 
+        0 0 20px 6px rgba(255, 255, 255, 0.8), 
+        0 0 30px 10px rgba(255, 255, 255, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
