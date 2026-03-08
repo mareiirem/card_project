@@ -1,4 +1,4 @@
-/* RESET */
+
 * {
     margin: 0;
     padding: 0;
@@ -138,7 +138,7 @@ nav a:hover {
 .card-background {
     position: fixed;
     top: 0;
-    left: -200px; /* start slightly off screen */
+    left: -200px; 
     width: 150%;
     height: 100%;
     pointer-events: none;
@@ -160,7 +160,7 @@ nav a:hover {
     background-position: center;
 }
 
-/* Placeholder colors */
+/* CARD BACKGROUND ANIMATION */
 .card1  { background-image: url("Assets/Draw 4.png"); top: 5%;  animation-duration: 18s; animation-delay: 0s; }
 .card2  { background-image: url("Assets/Blue- 12.png"); top: 15%; animation-duration: 25s; animation-delay: -4s; }
 .card3  { background-image: url("Assets/Green Reverse- 1.png"); top: 25%; animation-duration: 22s; animation-delay: -8s; }
