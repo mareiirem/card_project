@@ -89,9 +89,12 @@ body {
     z-index: 1;
 }
 
+/*remove ovals from non-hand cards */
 .card.wild::before,
 .top-draw::before,
-.top-discard::before {
+.top-discard::before,
+.back1::before,
+.back2::before {
     display: none;
 }
 
@@ -107,6 +110,23 @@ body {
     position: absolute;
     transform: rotate(-4deg);
 }
+
+/* STACK HOVER SPREAD EFFECT */
+
+.discard-stack:hover .back1 {
+    transform: rotate(-14deg) translate(-80px, 10px);
+}
+
+.discard-stack:hover .back2 {
+    transform: rotate(14deg) translate(80px, -10px);
+}
+
+
+.back1,
+.back2 {
+    transition: transform 0.35s ease;
+}
+
 
 /* CARD FLIP ANIMATION */
 .flippable {
@@ -139,14 +159,14 @@ body {
 }
 
 .card-back {
-    background: black;
+    background: rgb(255, 255, 255);
     transform: rotateY(180deg);
 }
 
 /* Card front containers */
 .discard-front,
 .draw-front {
-    background: black;
+    background: rgb(255, 255, 255);
     border-radius: 12px;
 }
 
@@ -194,6 +214,36 @@ body {
 .green  { background: #388e3c; }
 .yellow { background: #fbc02d; color: black; }
 .black  { background: black; }
+
+
+/* STACK CONTAINER */
+.discard-stack {
+    position: relative;
+    width: 100px;
+    height: 140px;
+}
+
+
+.discard-stack .card {
+    position: absolute;
+}
+
+.back1 {
+    transform: rotate(-6deg) translate(-6px, 4px);
+    z-index: 1;
+}
+
+.back2 {
+    transform: rotate(6deg) translate(6px, -4px);
+    z-index: 2;
+}
+
+.top-draw,
+.top-discard {
+    z-index: 3;
+}
+
+
 
 /* PLAYER AREA */
 .player-area {

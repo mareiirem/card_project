@@ -18,51 +18,77 @@
 
 <main class="table-container fade-in">
 
-    <!-- DRAW PILE -->
-    <section class="deck-area">
-        <h2>Draw Pile</h2>
-            <div class="card flippable top-draw">
-                <div class="card-inner">
-                    
-                    <!-- FRONT -->
-                    <div class="card-front draw-front">
-                        <img src="Assets/Uno_back.png" class="draw-front-img" alt="UNO Back">
-                    </div>
+<!-- DRAW PILE -->
+<section class="deck-area">
+    <h2>Draw Pile</h2>
 
-                    <!-- BACK -->
-                    <div class="card-back">
-                        <img src="Assets/Green Reverse- 1.png" class="discard-back-img" alt="Green reverse">
-                    </div>
+    <div class="discard-stack">
 
-                </div>
-            </div>
-    </section>
-
-    <!-- DISCARD PILE -->
-    <section class="deck-area">
-        <h2>Discard Pile</h2>
-        <div class="discard-stack">
-            
-            <!-- top card with flip -->
-            <div class="card flippable top-discard">
-                <div class="card-inner">
-                    
-                    <!-- FRONT -->
-                    <div class="card-front discard-front">
-                        <img src="Assets/Red- 5.png" class="discard-front-img" alt="Red 5">
-                    </div>
-
-                    <!-- BACK -->
-                    <div class="card-back">
-                        <img src="Assets/Uno_back.png" class="discard-back-img" alt="UNO Back">
-                    </div>
-
-                </div>
-            </div>
-
+        <!-- bottom cards  -->
+        <div class="card back1">
+            <img src="Assets/Uno_back.png" class="draw-front-img" alt="UNO Back">
         </div>
-    </section>
 
+        <div class="card back2">
+            <img src="Assets/Uno_back.png" class="draw-front-img" alt="UNO Back">
+        </div>
+
+        <!-- top card -->
+        <div class="card flippable top-draw">
+            <div class="card-inner">
+                
+                <!-- bottom cards  -->
+                <div class="card-front draw-front">
+                    <img src="Assets/Uno_back.png" class="draw-front-img" alt="UNO Back">
+                </div>
+
+                <!-- BACK -->
+                <div class="card-back">
+                    <img src="Assets/Green Reverse- 1.png" class="discard-back-img" alt="Green reverse">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- DISCARD PILE -->
+<section class="deck-area">
+    <h2>Discard Pile</h2>
+
+    <div class="discard-stack">
+
+        <!-- bottom cards -->
+        <div class="card back1">
+            <img src="Assets/Blue- 12.png" class="discard-back-img" alt="UNO Back">
+        </div>
+
+        <div class="card back2">
+            <img src="Assets/Wild-3.png" class="discard-back-img" alt="UNO Back">
+        </div>
+
+        <!-- top card with flip -->
+        <div class="card flippable top-discard">
+            <div class="card-inner">
+                
+                <!-- FRONT -->
+                <div class="card-front discard-front">
+                    <img src="Assets/Red- 5.png" class="discard-front-img" alt="Red 5">
+                </div>
+
+                <!-- BACK -->
+                <div class="card-back">
+                    <img src="Assets/Uno_back.png" class="discard-back-img" alt="UNO Back">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
 
 <div class="player-area">
 
